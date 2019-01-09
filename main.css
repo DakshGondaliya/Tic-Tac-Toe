@@ -7,53 +7,140 @@ body {
   background-color: #f3f3f7;
 }
 
+/*tic-tac-toe heading*/
 h1 {
-  text-align: center;
   color: #fff;
   text-shadow: 1px 1px 2px black, 0 0 4px blue, 0 0 5px darkblue;
   font-family: monospace, "sans-serif";
+  margin-bottom: 8vh;
   margin-top: 40px;
   font-size: 60px;
 }
 
-td {
-  border: 6px solid #ff3e4d;
-  height: 100px;
-  width: 100px;
-  text-align: center;
-  vertical-align: middle;
+/*result*/
+h3 {
+  display: none;
+  color: #ff3e4d;
   font-family: monospace, "sans-serif";
-  font-size: 60px;
-  cursor: pointer;
+  font-size: 50px;
+  margin-top: -5vh;
+  font-weight: bold;
 }
 
-table {
-  border-collapse: collapse;
-  position: absolute;
-  left: 50%;
-  margin-left: -155px;
-  top: 200px;
-  background-color: #fff;
-  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  /* box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2); */
+.warning {
+  color: white;
+  font-weight: normal;
+  font-family: arial;
 }
 
-table tr:first-child td {
+.row {
+  margin: 5vh auto;
+  width: 300px;
+  height: 300px;
+}
+
+.col-xs-4 {
+  background: #fff !important;
+  height: 33.3%;
+  width: 33.3%;
+  border: 2px solid #ff3e4d;
+  text-align: center;
+  padding-top: 18px;
+  /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+  /* box-shadow: 10px 10px 50px 0 rgba(0, 0, 0, 0.25); */
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.25);
+  color: #000;
+  font-family: monospace, "sans-serif";
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.b1,
+.b2,
+.b3 {
   border-top: 0;
 }
 
-table tr:last-child td {
-  border-bottom: 0;
-}
-
-table tr td:first-child {
-  border-left: 0;
-}
-
-table tr td:last-child {
+.b3,
+.b6,
+.b9 {
   border-right: 0;
 }
 
-.endgame {
-  display: none;
+.b7,
+.b8,
+.b9 {
+  border-bottom: 0;
 }
+
+.b1,
+.b4,
+.b7 {
+  border-left: 0;
+}
+
+.btn {
+  /*background: #53346D;*/
+  background: #212121;
+  color: white;
+  margin-top: 1px;
+  font-size: 25px;
+  font-weight: bold;
+  font-family: monospace, "sans-serif";
+}
+
+.play {
+  margin-top: 40px;
+  box-shadow: 0 2px 20px black;
+  color: #212121;
+  background: white;
+}
+
+.btn:hover,
+.btn:focus,
+.btn:active {
+  box-shadow: 0 2px 20px black;
+  color: #212121;
+  background: white;
+}
+
+/* modal box */
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 2;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fff;
+  margin: 12% auto;
+  padding: 20px;
+  border: 2px solid #ff3e4d;
+  width: 60vh;
+}
+
+div > div :nth-child(1) {
+  font-size: 3em;
+}
+
+div > div :nth-child(2) {
+  text-align: center;
+  display: inline;
+}
+
+div > div :nth-child(3) {
+  text-align: center;
+  display: inline;
+}
+
+/* .row > div {
+  background: #222;
+} */

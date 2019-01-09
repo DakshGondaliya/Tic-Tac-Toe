@@ -1,37 +1,49 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Tic-Tac-Toe</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-    <script src="main.js"></script>
-  </head>
-  <body>
-    <h1>Tic-Tac-Toe</h1>
-    <table>
-      <tr>
-        <td class="cell" id="1"></td>
-        <td class="cell" id="2"></td>
-        <td class="cell" id="3"></td>
-      </tr>
-      <tr>
-        <td class="cell" id="4"></td>
-        <td class="cell" id="5"></td>
-        <td class="cell" id="6"></td>
-      </tr>
-      <tr>
-        <td class="cell" id="7"></td>
-        <td class="cell" id="8"></td>
-        <td class="cell" id="9"></td>
-      </tr>
-    </table>
 
-    <div class="endgame">
-      <div class="text">
-        <button onClick="startGame()">Restart the game</button>
-      </div>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Tic-Tac-Toe</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+    crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+</head>
+
+<body>
+  <h1 class="text-center">Tic-Tac-Toe</h1>
+  <h3 class="text-center"></h3>
+
+  <div class="row">
+    <div id="b00" class="b1 col-xs-4"></div>
+    <div id="b01" class="b2 col-xs-4"></div>
+    <div id="b02" class="b3 col-xs-4"></div>
+    <div id="b10" class="b4 col-xs-4"></div>
+    <div id="b11" class="b5 col-xs-4"></div>
+    <div id="b12" class="b6 col-xs-4"></div>
+    <div id="b20" class="b7 col-xs-4"></div>
+    <div id="b21" class="b8 col-xs-4"></div>
+    <div id="b22" class="b9 col-xs-4"></div>
+  </div>
+
+
+  <div class="text-center">
+    <div class="btn play">Play as</div>
+  </div>
+
+  <div class="modal">
+
+    <div class="modal-content text-center">
+      <p>Play as:</p>
+      <div class="btn X">X</div>
+      <div class="btn O">O</div>
     </div>
-  </body>
+
+  </div>
+  <script src="//static.codepen.io/assets/common/stopExecutionOnTimeout-de7e2ef6bfefd24b79a3f68b414b87b8db5b08439cac3f1012092b2290c719cd.js"></script>
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+  <script src="main.js"></script>
+</body>
+
 </html>
